@@ -5,6 +5,9 @@ LABEL taiko.version="1.0.0"\
     description="debian image with node, dependencies for headless chrome, gauge and taiko npm packages"\
     repository="getgauge/taiko"
 
+#Set LANG
+ENV LANG ja_JP.UTF-8
+ENV LC_ALL ja_JP.UTF-8
 
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 ENV PATH=$PATH:/home/node/.npm-global/bin
