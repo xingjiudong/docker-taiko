@@ -29,4 +29,5 @@ RUN npm install taiko -g --allow-root --unsafe-perm=true
 RUN npm install -g @getgauge/cli
 
 WORKDIR /gauge
+RUN gauge install html-report screenshot
 RUN gauge init js
